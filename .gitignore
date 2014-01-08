@@ -1,0 +1,30 @@
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+.rspec
+/.bundle
+/vendor/bundle
+/log/*
+/tmp/*
+/db/*.sqlite3
+/public/system/*
+/coverage/
+/spec/tmp/*
+**.orig
+rerun.txt
+pickle-email-*.html
+
+solr/data/*
+solr/pids/*
+*.log
+
+#configuration files
+hateoas.yml
+mongoid.yml
+sunspot.yml
+config.ru
+log.yml
+
+#for local gem installations
+/vendor/*
