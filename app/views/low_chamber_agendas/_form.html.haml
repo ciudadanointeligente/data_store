@@ -1,0 +1,25 @@
+= form_for @low_chamber_agenda do |f|
+  - if @low_chamber_agenda.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@low_chamber_agenda.errors.count, "error")} prohibited this low_chamber_agenda from being saved:"
+      %ul
+        - @low_chamber_agenda.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :uid
+    = f.text_field :uid
+  .field
+    = f.label :date
+    = f.time_select :date
+  .field
+    = f.label :legislature
+    = f.text_field :legislature
+  .field
+    = f.label :session
+    = f.text_field :session
+  .field
+    = f.label :bill_list
+    = f.text_field :bill_list
+  .actions
+    = f.submit 'Save'

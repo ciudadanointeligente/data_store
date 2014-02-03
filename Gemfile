@@ -1,12 +1,16 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 3.2'
+gem "rails", "~> 4.0.2"
 gem "jquery-rails", "~> 2.2"
 
 gem 'haml-rails', '~> 0.4'
 
+gem 'mongoid', github: 'mongoid/mongoid'
+
 #Search
 gem 'sunspot_mongoid2'
+# gem 'sunspot_mongoid2', git: 'git://github.com//Nakort/sunspot_mongoid2'
+
 gem 'sunspot_solr'
 gem 'sunspot_cell', :git => 'git://github.com/zheileman/sunspot_cell.git'
 gem 'sunspot_cell_jars'

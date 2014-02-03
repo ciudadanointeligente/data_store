@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Uid:
+  = @low_chamber_agenda.uid
+%p
+  %b Date:
+  = @low_chamber_agenda.date
+%p
+  %b Legislature:
+  = @low_chamber_agenda.legislature
+%p
+  %b Session:
+  = @low_chamber_agenda.session
+%p
+  %b Bill list:
+  = @low_chamber_agenda.bill_list
+
+= link_to 'Edit', edit_low_chamber_agenda_path(@low_chamber_agenda)
+\|
+= link_to 'Back', low_chamber_agendas_path

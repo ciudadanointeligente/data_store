@@ -1,0 +1,27 @@
+%h1 Listing low_chamber_agendas
+
+%table
+  %tr
+    %th Uid
+    %th Date
+    %th Legislature
+    %th Session
+    %th Bill list
+    %th
+    %th
+    %th
+
+  - @low_chamber_agendas.each do |low_chamber_agenda|
+    %tr
+      %td= low_chamber_agenda.uid
+      %td= low_chamber_agenda.date
+      %td= low_chamber_agenda.legislature
+      %td= low_chamber_agenda.session
+      %td= low_chamber_agenda.bill_list
+      %td= link_to 'Show', low_chamber_agenda
+      %td= link_to 'Edit', edit_low_chamber_agenda_path(low_chamber_agenda)
+      %td= link_to 'Destroy', low_chamber_agenda, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Low chamber agenda', new_low_chamber_agenda_path

@@ -10,7 +10,7 @@ class LowChamberAgenda
   field :legislature, type: String
   field :session, type: String
   field :bill_list, type: Array
-
+ 
   include Sunspot::Mongoid2
   searchable do
     text :uid
@@ -19,4 +19,5 @@ class LowChamberAgenda
     text :session
     text :bill_list
   end
+
 end
