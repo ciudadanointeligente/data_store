@@ -7,6 +7,7 @@ class BillsController < ApplicationController
   include Roar::Rails::ControllerAdditions
   represents :json, :entity => Billit::BillRepresenter, :collection => Billit::BillCollectionRepresenter
   respond_to :json, :xml
+
   # json /bills
   # GET /bills.json
   def index

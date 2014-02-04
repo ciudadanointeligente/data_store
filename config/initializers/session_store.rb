@@ -1,8 +1,8 @@
 # Be sure to restart your server when you modify this file.
 
-BillIt::Application.config.session_store :cookie_store, key: '_bill-it_session'
+Middleware::Application.config.session_store :cookie_store, key: '_middleware_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
 # (create the session table with "rails generate session_migration")
-# BillIt::Application.config.session_store :active_record_store
+# Middleware::Application.config.session_store :active_record_store

@@ -1,7 +1,7 @@
-bill-it
-=======
+pmocl middleware
+================
 
-Bill management system for the Poplus project.
+Chilean parliamentary monitoring middleware.
 
 ##Install
 
@@ -11,12 +11,12 @@ https://rvm.io/rvm/install  and http://bundler.io/
 Make sure you have mongodb installed
 if not follow instructions at http://docs.mongodb.org/manual/tutorial/
 
-clone the billit project
+clone the data_store project
 ```
-git clone git@github.com:ciudadanointeligente/bill-it.git
+git clone git@github.com:ciudadanointeligente/data_store.git
 ```
 
-go to the bill-it project folder install gems
+go to the data_store project folder install gems
 ```
 bundle install
 ```
@@ -43,7 +43,7 @@ run the service:
 ```
 bundle exec rails s
 ```
-visit http://localhost:3000 to see billit running
+visit http://localhost:3000 to see the middleware running
 
 ##Usage
 ###GET bill

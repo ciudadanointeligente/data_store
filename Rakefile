@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-BillIt::Application.load_tasks
+Middleware::Application.load_tasks
