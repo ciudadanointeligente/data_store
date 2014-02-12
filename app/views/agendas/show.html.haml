@@ -1,0 +1,27 @@
+%p#notice= notice
+
+%p
+  %b Uid:
+  = @agenda.uid
+%p
+  %b Date:
+  = @agenda.date
+%p
+  %b Chamber:
+  = @agenda.chamber
+%p
+  %b Legislature:
+  = @agenda.legislature
+%p
+  %b Session:
+  = @agenda.session
+%p
+  %b Bill list:
+  = @agenda.bill_list
+%p
+  %b Date scraped:
+  = @agenda.date_scraped
+
+= link_to 'Edit', edit_agenda_path(@agenda)
+\|
+= link_to 'Back', agendas_path

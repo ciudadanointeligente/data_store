@@ -1,0 +1,31 @@
+%h1 Listing agendas
+
+%table
+  %tr
+    %th Uid
+    %th Date
+    %th Chamber
+    %th Legislature
+    %th Session
+    %th Bill list
+    %th Date scraped
+    %th
+    %th
+    %th
+
+  - @agendas.each do |agenda|
+    %tr
+      %td= agenda.uid
+      %td= agenda.date
+      %td= agenda.chamber
+      %td= agenda.legislature
+      %td= agenda.session
+      %td= agenda.bill_list
+      %td= agenda.date_scraped
+      %td= link_to 'Show', agenda
+      %td= link_to 'Edit', edit_agenda_path(agenda)
+      %td= link_to 'Destroy', agenda, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New agenda', new_agenda_path
