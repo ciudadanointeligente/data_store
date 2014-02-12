@@ -11,7 +11,7 @@ class Agenda
   field :legislature, type: String
   field :session, type: String
   field :bill_list, type: Array
-  field :date_scraped, type: Time
+  # field :date_scraped, type: Time
 
   include Sunspot::Mongoid2
   searchable do
@@ -21,6 +21,6 @@ class Agenda
     text :legislature
     text :session
     text :bill_list
-    time :date_scraped
+    # time :date_scraped
   end
 end

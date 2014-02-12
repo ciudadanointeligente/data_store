@@ -2,7 +2,7 @@ class AgendasController < ApplicationController
   # GET /agendas
   # GET /agendas.json
 
-  before_action :get_agenda#, except: [:index, :new, :create]
+  # before_action :get_agenda#, except: [:index, :new, :create]
 
   def index
     @agendas = Agenda.all
@@ -93,7 +93,7 @@ class AgendasController < ApplicationController
     end
   end
 
-  def get_agenda
-    @agenda = Agenda.find_by(uid: '361-91')
-  end
+  # def get_agenda
+    # @agenda = Agenda.find_by(uid: '361-91')
+  # end
 end
