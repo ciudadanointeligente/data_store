@@ -1,6 +1,7 @@
 Middleware::Application.routes.draw do
 
   resources :agendas
+  resources :bill_quorums
   # resources :low_chamber_agendas
 
   # resources :bills do
