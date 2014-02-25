@@ -7,14 +7,14 @@ class BillQuorum
 
   field :uid, type: String
   field :quorum, type: Array
-  field :abstract, type: String
+  field :raw_quorum, type: String
   field :date_scraped, type: Time
 
   include Sunspot::Mongoid2
   searchable do
     text :uid
     text :quorum
-    text :abstract
+    text :raw_quorum
     time :date_scraped
   end
 end
