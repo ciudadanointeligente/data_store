@@ -6,14 +6,14 @@ class BillQuorum
   validates_uniqueness_of :uid
 
   field :uid, type: String
-  field :quorum, type: Array
-  field :raw_quorum, type: String
+  field :num_quorum, type: Array
+  field :raw_quorum, type: Array
   field :date_scraped, type: Time
 
   include Sunspot::Mongoid2
   searchable do
     text :uid
-    text :quorum
+    text :num_quorum
     text :raw_quorum
     time :date_scraped
   end
