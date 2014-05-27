@@ -1,4 +1,4 @@
-class LowChamberVotes
+class LowChamberVote
   include Mongoid::Document
   include Mongoid::Timestamps
 
