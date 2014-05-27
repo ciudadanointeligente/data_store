@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Uid:
+  = @vote.uid
+%p
+  %b Date:
+  = @vote.date
+%p
+  %b Legislature:
+  = @vote.legislature
+%p
+  %b Session:
+  = @vote.session
+%p
+  %b Bill list:
+  = @vote.bill_list
+
+= link_to 'Edit', edit_vote_path(@vote)
+\|
+= link_to 'Back', votes_path
