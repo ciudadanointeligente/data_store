@@ -1,0 +1,2 @@
+module LowChamberVotesHelper
+end

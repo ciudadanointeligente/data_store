@@ -1,5 +1,5 @@
-pmocl middleware
-================
+legislative-middleware
+======================
 
 Chilean parliamentary monitoring middleware.
 
@@ -11,12 +11,12 @@ https://rvm.io/rvm/install  and http://bundler.io/
 Make sure you have mongodb installed
 if not follow instructions at http://docs.mongodb.org/manual/tutorial/
 
-clone the data_store project
+clone the legislative-middleware project
 ```
-git clone git@github.com:ciudadanointeligente/data_store.git
+git clone git@github.com:ciudadanointeligente/legislative-middleware.git
 ```
 
-go to the data_store project folder install gems
+go to the legislative-middleware project folder install gems
 ```
 bundle install
 ```
