@@ -68,7 +68,7 @@ class VotesController < ApplicationController
   # PUT /votes/1
   # PUT /votes/1.json
   def update
-    # @vote = Vote.find(params[:id])
+    @vote = Vote.find(params[:id])
 
     respond_to do |format|
       if @vote.update_attributes(params[:vote])
